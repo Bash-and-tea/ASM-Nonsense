@@ -21,4 +21,8 @@ $ python3 nonsense.py
 ```
 
 ### License
-This code has been released under the [MIT License](../LICENSE).
+This code has been released under the [MIT License](LICENSE).
+
+### Acknowledgements
+Thank you to   for inspiring the project.
+See the original article here: 
