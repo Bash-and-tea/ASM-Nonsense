@@ -5,6 +5,7 @@
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
+* [Acknowledgements](#acknowledgements)
 
 ### Installation
 Clone the git repository:
@@ -24,5 +25,5 @@ $ python3 nonsense.py
 This code has been released under the [MIT License](LICENSE).
 
 ### Acknowledgements
-Thank you to   for inspiring the project.
-See the original article here: 
+Thank you to jroweboy for inspiring the project.
+See the original article here: [Main is usually a function.](https://jroweboy.github.io/c/asm/2015/01/26/when-is-main-not-a-function.html)
