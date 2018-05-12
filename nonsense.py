@@ -5,18 +5,18 @@ import math
 def write_template(message, len_mess):
 	with open('nonsense_template.c', 'w') as fout:
 		fout.write(r'void main() {' + '\n' +
-				   r'	__asm__ (' + '\n' +
-				   r'		"movl $1, %eax;\n"' + '\n' +
-				   r'		"movl $1, %ebx;\n"' + '\n' +
-				   r'		"leal 16(%eip), %esi;\n"' + '\n' +
-				   r'		"movl $' + str(len_mess) + r', %edx;\n"' + '\n' +
-				   r'		"syscall;\n"' + '\n' +
-				   r'		"movl $60,%eax;\n"' + '\n' +
-            	   r'		"xorl %ebx,%ebx; \n"' + '\n' +
-            	   r'		"syscall;\n"' + '\n' +
-            	   r'''		"message: .ascii \"''' + str(message) + r'''\\n\";"''' + '\n' + 
-				   r'	);' + '\n' +
-				   r'}')
+			   r'	__asm__ (' + '\n' +
+			   r'		"movl $1, %eax;\n"' + '\n' +
+			   r'		"movl $1, %ebx;\n"' + '\n' +
+			   r'		"leal 16(%eip), %esi;\n"' + '\n' +
+			   r'		"movl $' + str(len_mess) + r', %edx;\n"' + '\n' +
+			   r'		"syscall;\n"' + '\n' +
+			   r'		"movl $60,%eax;\n"' + '\n' +
+		           r'		"xorl %ebx,%ebx; \n"' + '\n' +
+            		   r'		"syscall;\n"' + '\n' +
+            	  	   r'''		"message: .ascii \"''' + str(message) + r'''\\n\";"''' + '\n' + 
+			   r'	);' + '\n' +
+			   r'}')
 		fout.close()
 	return
 
