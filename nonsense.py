@@ -103,6 +103,9 @@ def writeprog(cmdarray):
 def main():
 	message = input("What message would you like to obfuscate?: ")
 	len_mess = len(message) + 1
+	if not (len_mess % 2 == 0):
+		message += ' '
+		len_mess += 1
 	write_template(message, len_mess)
 	call_gdb()
 	commands = dissect()
